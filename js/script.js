@@ -1,5 +1,18 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2024 Julianne Leblanc-Peltier All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Julianne Leblanc-Peltier
+// Created on: April 2024
 // This file contains the JS functions for index.html
+
+function myButtonClicked() {
+  // input
+  const length = parseInt(document.getElementById("length-of-triangle").value)
+  const width = parseInt(document.getElementById("base-of-triangle").value)
+  const height = parseInt(document.getElementById("height-of-triangle").value)
+
+  // process
+  const volume = (length * width * height) / 3
+
+  // output
+  document.getElementById("area-of-trapezoid").innerHTML = area.toFixed(2) + " mm³"
+}
