@@ -8,7 +8,7 @@ body {
 }
 
 .content {
-  padding-left: 10px;
+  padding-left: 30px;
   padding-right: 10px;
 }
 
@@ -24,7 +24,7 @@ body {
   clear: both;
 }
 
-.trapezoid-image {
+.pyramid-image {
   width: 500px;
 }
 

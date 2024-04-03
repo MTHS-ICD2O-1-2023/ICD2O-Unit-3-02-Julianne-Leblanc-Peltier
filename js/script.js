@@ -14,5 +14,5 @@ function myButtonClicked() {
   const volume = (length * width * height) / 3
 
   // output
-  document.getElementById("area-of-trapezoid").innerHTML = area.toFixed(2) + " mm³"
+  document.getElementById("volume-of-pyramid").innerHTML = volume.toFixed(2) + " mm³"
 }

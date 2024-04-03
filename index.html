@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area of a Trapezoid, with JS" />
+  <meta name="description" content="Volume of a Pyramid, with JS" />
   <meta name="keywords" content="mths, ics2o" />
   <meta name="author" content="Julianne Leblanc-Peltier" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Area of a Trapezoid, with JS</title>
+  <title>Volume of a Pyramid, with JS</title>
 </head>
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -21,37 +21,37 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area of a Trapezoid, with JS</span>
+        <span class="mdl-layout-title">Volume of a Pyramid, with JS</span>
       </div>
     </header>
     <div class="content">
       <div class="row">
         <div class="column">
-          <p class="bigger-text">Formula <br /><br />A = [ (a + b) / 2 ] h </p>
+          <p class="bigger-text">Formula <br /><br />V = (L x W x H) / 3 </p>
           <p>Please enter integers for dimensions:</p>
           <!-- Numeric Textfield -->
           <form action="#">
-            a base:
+            Length:
             <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="a-base" />
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-of-pyramid" step="0.01" />
               <label class="mdl-textfield__label" for="sample2">Number...</label>
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
             mm
             <br />
             <!-- Numeric Textfield -->
-            b base:
+            Width:
             <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="b-base" />
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="width-of-pyramid" step="0.01" />
               <label class="mdl-textfield__label" for="sample2">Number...</label>
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
             mm
             <br />
             <!-- Numeric Textfield -->
-            height
+            Height
             <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height" />
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height" step="0.01" />
               <label class="mdl-textfield__label" for="sample2">Number...</label>
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
@@ -60,13 +60,13 @@
             <!-- Accent-colored raised button with ripple -->
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
               onclick="myButtonClicked()" type="button">
-              Calculate Area
+              Calculate Volume
             </button>
           </form>
           <div>
             <p>
               <br />
-              Area is: <span id="area-of-trapezoid"></span>
+              Volume is: <span id="volume-of-pyramid"></span>
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@
           <br />
           <br />
           <br />
-          <img src="./images/trapezoid.svg" alt="trapezoid with variables" class="trapezoid-image" />
+          <img src="./images/pyramid.png" alt="pyramid" class="pyramid-image" />
         </div>
       </div>
     </div>
